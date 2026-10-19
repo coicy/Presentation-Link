@@ -18,13 +18,21 @@
 .method{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.method h2{max-width:550px}.method-list{list-style:none;margin:0;padding:0;border-top:1px solid #b8c1b9}.method-list li{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:18px 0;border-bottom:1px solid #b8c1b9}.method-list strong{font-size:15px}.method-list small{display:block;font-size:13px;color:var(--mute);margin-top:4px;line-height:1.7}.method-no{color:var(--accent);font:800 12px ui-monospace,monospace;padding-top:4px}.mini-video-links{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:25px}.video-link{display:block;padding:20px;border:1px solid #b6c1b7;border-radius:13px;background:#faf9f4}.video-link:hover{border-color:var(--accent)}.video-link b{display:block}.video-link small{color:var(--mute);display:block;margin-top:5px}
 .contact-section{background:var(--ink);color:var(--white);padding:90px 0}.contact-layout{display:grid;grid-template-columns:1fr 330px;align-items:end;gap:50px}.contact-section .eyebrow{color:var(--mint)}.contact-section h2{font-size:clamp(40px,6vw,78px);line-height:1.1;letter-spacing:-.06em;margin:16px 0 24px}.contact-section p{color:#b5c7c2;max-width:610px;font-size:17px}.contact-section .cta{background:var(--lime);color:var(--ink);border-color:var(--lime);margin-top:8px}.contact-note{border:1px solid #51645e;padding:25px;border-radius:16px;color:#c6d6d1;font-size:14px}.contact-note strong{display:block;color:#fff;font-size:17px;margin-bottom:10px}.foot{background:#192323;color:#9cafaa;padding:25px 0;font-size:12px}.foot-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot a{text-decoration:underline;text-underline-offset:3px}.foot a:hover{color:white}
 @keyframes floatboard{50%{transform:rotate(-2deg) translateY(-10px)}}@keyframes tiltpulse{50%{transform:rotate(48deg) scale(1.045)}}@media(max-width:970px){.hero-layout{grid-template-columns:1fr 1fr}.hero-visual{min-height:350px}.visual-board{width:95%}.hero h1{font-size:clamp(51px,7vw,80px)}.cap-grid{grid-template-columns:1fr 1fr}.cap:last-child{grid-column:span 2}.contact-layout{grid-template-columns:1fr 250px}}@media(max-width:740px){.wrap{width:calc(100% - 36px)}.nav-inner{min-height:68px}.nav-items{gap:13px;font-size:12px}.nav-items a:nth-child(2){display:none}.nav-end{padding:7px 12px}.hero{padding:44px 0 48px}.hero-layout{grid-template-columns:1fr;gap:0}.hero h1{font-size:clamp(51px,11vw,80px)}.hero-visual{max-width:500px;width:100%;margin:24px auto 0;min-height:310px}.visual-board{width:73%;margin-left:0;box-shadow:10px 12px 0 var(--ink)}.float-stamp{right:1%}.hero-foot{gap:9px 20px;padding-top:22px;font-size:11px}.marquee .wrap{font-size:10px;gap:16px}.section{padding:70px 0}.section-head{display:block}.intro{margin-top:18px}.filters{margin-top:24px}.project-list{grid-template-columns:1fr}.project.featured{grid-column:span 1;display:flex}.featured .project-media{min-height:265px;border-right:0;border-bottom:1px solid #cbd5cb}.project-media{min-height:225px}.cap-grid{grid-template-columns:1fr}.cap:last-child{grid-column:auto}.method{grid-template-columns:1fr;gap:25px}.mini-video-links{grid-template-columns:1fr}.contact-layout{grid-template-columns:1fr;gap:26px}.contact-section{padding:70px 0}.contact-note{max-width:520px}}@media(max-width:390px){.nav-items a:nth-child(3){display:none}.hero h1{font-size:47px}.visual-board{width:85%}.float-stamp{font-size:12px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.visual-board,.tile{animation:none}.cta,.project,.nav-items a{transition:none}}@media print{.nav{position:relative}.filter{display:none}.project[hidden]{display:flex!important}.project.featured[hidden]{display:grid!important}.section{break-inside:avoid}.hero-visual{min-height:280px}.edit-hotzone,.html-tools{display:none!important}}
+
+.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.about-intent{background:#d9e9dc;border:1px solid #aec7b6;border-radius:22px;padding:36px;display:flex;flex-direction:column;justify-content:space-between}.about-intent>p{font-size:clamp(21px,2vw,29px);font-weight:750;line-height:1.7;margin:0 0 32px}.process-strip{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.process-strip span{font-size:12px;font-weight:750;background:#fff9;border-radius:5px;padding:7px 11px}.process-strip b{color:var(--accent)}.fact-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.fact-grid>div{border:1px solid var(--line);border-radius:12px;padding:19px;background:var(--white);display:flex;flex-direction:column;gap:9px}.fact-grid>div:nth-child(3){grid-column:span 2}.fact-grid b{font:850 clamp(39px,5vw,62px)/1 ui-monospace,monospace;color:var(--accent)}.fact-grid small{font-size:17px}.fact-grid span{font-size:12px;color:var(--mute)}.fact-grid p{grid-column:span 2;font-size:11px;color:var(--mute);margin:0}
+.project-media.rtt{background:linear-gradient(135deg,#c5dabf,#a0c4bb)}.rtt .media-word{color:#1a4f40}.project-media.sprout{background:linear-gradient(135deg,#c7dfaa,#e3eac6)}.sprout .media-word{color:#335a35}.sprout .media-word small{font:800 12px ui-monospace,monospace;letter-spacing:0}.project-media.steel{background:linear-gradient(135deg,#a4aeba,#e9c08c)}.steel .media-word{color:#294057;font-size:42px}.project-media.weather{background:linear-gradient(135deg,#e4f4e8,#bdd4c6)}.weather .media-word{color:#43685b}
+.cap:nth-child(4) .cap-icon{background:#cbdff0}.cap:nth-child(5) .cap-icon{background:#e4eac4}.cap:nth-child(6) .cap-icon{background:#f1cdb3}
+.timeline{border-top:1px solid #afbbb0}.time-item{display:grid;grid-template-columns:230px 1fr;gap:20px;padding:23px 3px;border-bottom:1px solid #afbbb0}.time-item time{font:800 13px ui-monospace,monospace;color:var(--accent);padding-top:4px}.time-item h3{margin:0 0 7px;font-size:21px}.time-item p{color:var(--mute);font-size:14px;margin:0 0 9px;line-height:1.85}.time-item small{font:700 11px ui-monospace,monospace;background:#e7eae1;padding:6px 9px;color:#456159}.evidence{display:flex;justify-content:space-between;align-items:center;gap:22px;background:#e7eee5;border:1px solid var(--line);border-radius:18px;padding:25px;margin-top:30px}.evidence h3{font-size:19px;margin:0}.evidence p{font-size:13px;color:var(--mute);max-width:460px;line-height:1.75}.evidence-links{display:grid;grid-template-columns:1fr 1fr;gap:8px;min-width:370px}.evidence-links a{font-size:12px;font-weight:750;padding:9px 11px;border-radius:6px;background:#fff;border:1px solid var(--line)}.evidence-links a:hover{color:var(--accent);border-color:var(--accent)}
+@media(max-width:970px){.nav-items{gap:13px}.nav-items a{font-size:12px}.evidence{flex-direction:column;align-items:stretch}.evidence-links{min-width:0}}
+@media(max-width:740px){.about-grid{grid-template-columns:1fr}.about-intent{padding:25px}.nav-items a:nth-child(1),.nav-items a:nth-child(3),.nav-items a:nth-child(5){display:none}.nav-items a:nth-child(2){display:inline}.time-item{grid-template-columns:1fr;gap:7px}.evidence-links{grid-template-columns:1fr 1fr}}@media(max-width:400px){.evidence-links{grid-template-columns:1fr}.steel .media-word{font-size:37px}}
+
 </style>
 </head>
 <body>
 <header class="nav">
  <div class="wrap nav-inner">
   <a class="brand" href="#top" aria-label="返回主页顶部">COICY<b>.</b></a>
-  <nav class="nav-items" aria-label="主导航"><a href="#work">精选作品</a><a href="#capabilities">能力结构</a><a href="#approach">工作方法</a><a class="nav-end" href="#contact">联系 ↗</a></nav>
+  <nav class="nav-items" aria-label="主导航"><a href="#about">关于</a><a href="#work">作品</a><a href="#cases">技术案例</a><a href="#capabilities">技能</a><a href="#journey">经历</a><a class="nav-end" href="#contact">联系 ↗</a></nav>
  </div>
 </header>
 <main id="top">
@@ -49,12 +57,20 @@
   </div>
  </section>
  <div class="marquee" aria-label="关注领域"><div class="wrap"><span>GAMEPLAY ENGINEERING</span><span>TECHNICAL DESIGN</span><span>AI-ASSISTED ASSET PIPELINE</span><span>PROTOTYPING</span></div></div>
- <section id="work" class="section wrap" aria-labelledby="work-title">
-  <div class="section-head"><div><div class="eyebrow"><span class="section-index">01 / </span>SELECTED WORK</div><h2 id="work-title" data-edit-id="work-title">让作品说明能力。</h2></div><p class="intro" data-edit-id="work-intro">不仅展示使用了什么引擎，更展示问题如何被拆解：机制设计、系统实现、视觉整合以及可复现的验证。</p></div>
+ 
+<section id="about" class="section wrap" aria-label="个人介绍">
+ <div class="section-head"><div><div class="eyebrow">01 / ABOUT</div><h2 data-edit-id="about-heading">不只是写代码，<br>更关注游戏如何成型。</h2></div><p class="intro" data-edit-id="about-intro">软件工程本科。以 Unity / C# 客户端开发为主，也在 Godot 中完成玩法、系统与协作交付，并持续实践技术策划、AI 辅助制作及验证工作流。</p></div>
+ <div class="about-grid">
+  <div class="about-intent"><p data-edit-id="about-position">从体验目标与规则边界出发，亲自参与程序架构、数值与状态管理、UI 反馈、美术资产整合，再把实际结果交给测试和玩家验证。</p><div class="process-strip"><span>体验</span><b>→</b><span>规则</span><b>→</b><span>实现</span><b>→</b><span>表现</span><b>→</b><span>验证</span></div></div>
+  <div class="fact-grid"><div><b>03</b><span>次限时赛事主程序经历</span></div><div><b>43</b><span>组《过早》场景化测试</span></div><div><b>4 <small>周</small></b><span>《过早》主要系统实现与联调，约</span></div><p>数据分别对应特定赛事和项目经历，不是泛化绩效指标。</p></div>
+ </div>
+</section>
+<section id="work" class="section wrap" aria-labelledby="work-title">
+  <div class="section-head"><div><div class="eyebrow"><span class="section-index">02 / </span>SELECTED WORK</div><h2 id="work-title" data-edit-id="work-title">让作品说明能力。</h2></div><p class="intro" data-edit-id="work-intro">不仅展示使用了什么引擎，更展示问题如何被拆解：机制设计、系统实现、视觉整合以及可复现的验证。</p></div>
   <div class="filters" role="group" aria-label="作品分类筛选">
     <button type="button" class="filter" data-filter="all" aria-pressed="true">全部作品</button>
     <button type="button" class="filter" data-filter="game" aria-pressed="false">游戏与原型</button>
-    <button type="button" class="filter" data-filter="tool" aria-pressed="false">工具与流程</button>
+    <button type="button" class="filter" data-filter="tool" aria-pressed="false">工具与流程</button><button type="button" class="filter" data-filter="competition" aria-pressed="false">限时赛事</button>
   </div>
   <div class="project-list" id="project-list">
    <article class="project featured" data-type="game">
@@ -81,25 +97,57 @@
     <div class="project-body"><div class="project-num">PROJECT / 05 · BROWSER PROTOTYPE</div><h3 data-edit-id="settlement-title">涌现式聚落原型</h3><p class="project-desc" data-edit-id="settlement-desc">基于 Three.js 的浏览器聚落交互原型，用于演示空间与模拟系统的可视化构想。</p><div class="project-detail"><b>可以直接体验：</b>现有 GitHub Pages 项目页面。</div><div class="tags"><span>Three.js</span><span>Web Prototype</span></div><a class="arrow-link" href="https://coicy.github.io/TaptapProtoType/settlement.html" target="_blank" rel="noopener noreferrer">打开在线原型 ↗</a>
     </div>
    </article>
+
+   <article class="project" data-type="game">
+    <div class="project-media rtt"><div class="proj-deco"></div><div class="media-word" aria-hidden="true">SLG × RTT</div><span class="visual-caption">文字概念视觉 · 在研项目</span></div>
+    <div class="project-body"><div class="project-num">PROJECT / 06 · UNITY / IN DEVELOPMENT</div><h3 data-edit-id="rtt-title">自动生产 SLG + RTT 战斗</h3><p class="project-desc" data-edit-id="rtt-desc">独立开发：将建造、自动生产、物流与即时战术军团控制连接为玩法循环。主导分层架构、事件驱动与编辑器配置工具。</p><div class="project-detail"><b>工程难点：</b><span data-edit-id="rtt-challenge">Tick 调度收敛到主线程；八向加权 A* 与寻路排队；配置热重载、快照差异和线程池物流任务。</span></div><div class="tags"><span>Unity</span><span>C#</span><span>Tick</span><span>Pathfinding</span></div><div class="minor-link">未公开源代码 · 详情见下方技术案例</div></div>
+   </article>
+   <article class="project" data-type="game competition">
+    <div class="project-media sprout"><div class="proj-deco"></div><div class="media-word" aria-hidden="true">芽<br><small>GROW & WITHER</small></div><span class="visual-caption">原创文字示意 · 非游戏截图</span></div>
+    <div class="project-body"><div class="project-num">PROJECT / 07 · 48-HOUR GAME JAM</div><h3 data-edit-id="sprout-title">《芽 · Grow and Wither》</h3><p class="project-desc" data-edit-id="sprout-desc">在 48 小时内完成的植物成长平台解谜作品：不同形态获得不同通行能力，利用狭缝、藤蔓与毒雾设计关卡。</p><div class="project-detail"><b>主程序工作：</b><span data-edit-id="sprout-challenge">单角色节点与形态资源驱动；资源深拷贝；关卡局部事件总线；JSON 白盒关卡生成。</span></div><div class="tags"><span>Godot 4</span><span>Game Jam</span><span>Gameplay</span></div><a class="arrow-link" href="https://globalgamejam.org/games/2026/ya-grow-and-wither-2" target="_blank" rel="noopener noreferrer">查看 Global Game Jam 作品页 ↗</a></div>
+   </article>
+   <article class="project" data-type="game competition">
+    <div class="project-media steel"><div class="proj-deco"></div><div class="media-word" aria-hidden="true">钢铁洪流<br>贪吃蛇</div><span class="visual-caption">原创文字示意 · 非游戏截图</span></div>
+    <div class="project-body"><div class="project-num">PROJECT / 08 · 2023 GAME JAM</div><h3 data-edit-id="steel-title">《钢铁洪流贪吃蛇》</h3><p class="project-desc" data-edit-id="steel-desc">把蛇形车队增长和弹幕射击相结合，形成车队移动、自动攻击与敌方炮台的完整战斗循环。</p><div class="project-detail"><b>负责：</b><span data-edit-id="steel-work">移动与增长、敌人行为、子弹及碰撞逻辑；团队任务拆分和关卡难度协作。</span></div><div class="tags"><span>Unity</span><span>Gameplay Programming</span><span>Team</span></div><a class="arrow-link" href="https://www.bilibili.com/video/BV13u4y1J7Up" target="_blank" rel="noopener noreferrer">查看实机演示 ↗</a></div>
+   </article>
+   <article class="project" data-type="game competition">
+    <div class="project-media weather"><div class="proj-deco"></div><div class="media-word" aria-hidden="true">白与绿地</div><span class="visual-caption">原创文字示意 · 非游戏截图</span></div>
+    <div class="project-body"><div class="project-num">PROJECT / 09 · 2023 GAME COMPETITION</div><h3 data-edit-id="weather-title">《白与绿地》</h3><p class="project-desc" data-edit-id="weather-desc">以天气对环境交互和路径变化的影响为核心，结合事件驱动系统、关卡设计及 UI 来组织玩家反馈。</p><div class="project-detail"><b>负责：</b><span data-edit-id="weather-work">委托通知与天气状态机、UGUI 整体界面、轻量动画实现及关卡搭建。</span></div><div class="tags"><span>Unity</span><span>C# Events</span><span>FSM</span><span>UGUI</span></div><a class="arrow-link" href="https://www.bilibili.com/video/BV1mP411R7RA" target="_blank" rel="noopener noreferrer">查看关卡演示 ↗</a></div>
+   </article>
   </div>
  </section>
  <section id="capabilities" class="section wrap" aria-labelledby="cap-title">
-  <div class="section-head"><div><div class="eyebrow"><span class="section-index">02 / </span>CAPABILITY MAP</div><h2 id="cap-title" data-edit-id="cap-title">跨越分工，不丢失细节。</h2></div><p class="intro" data-edit-id="cap-intro">我希望承担的不只是单一模块开发，也包括把策划意图、美术资源与实际游戏反馈连接起来的工作。</p></div>
+  <div class="section-head"><div><div class="eyebrow"><span class="section-index">04 / </span>CAPABILITY MAP</div><h2 id="cap-title" data-edit-id="cap-title">跨越分工，不丢失细节。</h2></div><p class="intro" data-edit-id="cap-intro">我希望承担的不只是单一模块开发，也包括把策划意图、美术资源与实际游戏反馈连接起来的工作。</p></div>
   <div class="cap-grid">
     <article class="cap"><div class="cap-icon" aria-hidden="true">01</div><h3>玩法与系统设计</h3><p data-edit-id="cap-design">拆解战斗、成长、经营与卡牌规则，明确触发条件、状态转移、数值边界和玩家反馈，再为实现定义可检验标准。</p><ul><li>战斗机制</li><li>数值模型</li><li>资源结算</li><li>GDD</li></ul></article>
     <article class="cap"><div class="cap-icon" aria-hidden="true">02</div><h3>程序与工具实现</h3><p data-edit-id="cap-code">从 C# / Lua 的运行时机制到 Godot、Unity、UE 的客户端开发，重视数据驱动、模块边界、日志和自动验证。</p><ul><li>C# / Lua</li><li>Godot</li><li>Unity / UE</li><li>Python</li></ul></article>
     <article class="cap"><div class="cap-icon" aria-hidden="true">03</div><h3>视觉资产与落地</h3><p data-edit-id="cap-art">把美术需求转为可用资产规格：AI 生成概念与界面参考、切分和整理图像、调整导入格式并在引擎里验证最终效果。</p><ul><li>AI 视觉辅助</li><li>2D 资产处理</li><li>UI 实现</li><li>引擎整合</li></ul></article>
+
+    <article class="cap"><div class="cap-icon" aria-hidden="true">04</div><h3>Unity 客户端</h3><p data-edit-id="cap-unity">UGUI、Animation、NavMesh、Timeline 与编辑器扩展。理解 Canvas 重建、Draw Call、对象池、GC 及资源加载的常见优化方法。</p><ul><li>UGUI</li><li>Editor Tools</li><li>Optimization</li><li>AssetBundle</li></ul></article>
+    <article class="cap"><div class="cap-icon" aria-hidden="true">05</div><h3>数据模型与验证</h3><p data-edit-id="cap-testing">通过 JSON / ScriptableObject、日志、场景测试与数据驱动工具维持规则一致性，验证结算边界和异常输入。</p><ul><li>Data Driven</li><li>Trace</li><li>Scenario Tests</li></ul></article>
+    <article class="cap"><div class="cap-icon" aria-hidden="true">06</div><h3>协作与 AI 工作流</h3><p data-edit-id="cap-workflow">建立任务拆分、代码评审、需求冻结、测试与审查流程；使用 AI 辅助代码、美术资产与宣传物料制作，并设置人工验收。</p><ul><li>Git / Perforce</li><li>AI Agent</li><li>Code Review</li></ul></article>
   </div>
  </section>
  <section id="approach" class="section wrap" aria-labelledby="approach-title">
-  <div class="method"><div><div class="eyebrow"><span class="section-index">03 / </span>HOW I WORK</div><h2 id="approach-title" data-edit-id="approach-title">一个循环，<br>从想法到验证。</h2><p class="intro" data-edit-id="approach-text" style="margin-top:22px">好的设计需要被实现，好的实现需要被玩家感知。我倾向于把文档、代码、素材和测试放在同一条可追踪的迭代链条中。</p></div>
+  <div class="method"><div><div class="eyebrow"><span class="section-index">05 / </span>HOW I WORK</div><h2 id="approach-title" data-edit-id="approach-title">一个循环，<br>从想法到验证。</h2><p class="intro" data-edit-id="approach-text" style="margin-top:22px">好的设计需要被实现，好的实现需要被玩家感知。我倾向于把文档、代码、素材和测试放在同一条可追踪的迭代链条中。</p></div>
   <ol class="method-list"><li><span class="method-no">01</span><div><strong>定义体验目标</strong><small>玩家应该如何判断、行动、得到反馈。</small></div></li><li><span class="method-no">02</span><div><strong>把规则转为契约</strong><small>条件、时序、边界、数据与失败路径。</small></div></li><li><span class="method-no">03</span><div><strong>构建可玩切片</strong><small>代码、资产、UI 与声音共同形成可操作体验。</small></div></li><li><span class="method-no">04</span><div><strong>测试并留下证据</strong><small>日志、场景测试、回归检查与真实试玩共同收敛设计。</small></div></li></ol></div>
   <div class="mini-video-links">
    <a class="video-link" href="https://www.bilibili.com/video/BV1mP411R7RA" target="_blank" rel="noopener noreferrer"><b>白与绿地 · 新手教程关演示 ↗</b><small>吉比特未来游戏制作人 · 作品视频</small></a>
    <a class="video-link" href="https://www.bilibili.com/video/BV13u4y1J7Up" target="_blank" rel="noopener noreferrer"><b>钢铁洪流贪吃蛇 · 游玩演示 ↗</b><small>48 小时 Game Jam · 作品视频</small></a>
   </div>
  </section>
- <section id="contact" class="contact-section" aria-labelledby="contact-title"><div class="wrap contact-layout"><div><div class="eyebrow">04 / CONTACT & COLLABORATION</div><h2 id="contact-title" data-edit-id="contact-title">一起让想法，<br>成为能玩的东西。</h2><p data-edit-id="contact-desc">欢迎围绕游戏客户端开发、技术策划、系统设计与创作工具展开交流。更多工程记录与公开项目可以在 GitHub 查看。</p><a class="cta" href="https://github.com/coicy" target="_blank" rel="noopener noreferrer">前往 GitHub ↗</a></div><div class="contact-note"><strong>YAN SHANGYU / 严尚宇</strong>Gameplay · Engineering · Visual Integration<br><br>当前以 GitHub 作为公开联系入口。邮箱、简历下载与其他社交方式可在确认公开信息后补充。</div></div></section>
+ 
+<section id="journey" class="section wrap" aria-label="经历与教育">
+ <div class="section-head"><div><div class="eyebrow">06 / EXPERIENCE</div><h2 data-edit-id="journey-heading">从限时原型，到系统开发。</h2></div><p class="intro" data-edit-id="journey-subhead">持续实践独立研发和多人协作，用真实的项目节点说明成长方向。</p></div>
+ <div class="timeline">
+  <article class="time-item"><time>2026 — NOW</time><div><h3>独立研发与跨引擎制作</h3><p data-edit-id="timeline-a">Unity 自动生产 SLG+RTT 在研；Godot《过早·江城早餐店》《失控温室》；游戏开发 Agent 工具链与验证。</p><small>主程序 / 玩法设计 / 工具研发</small></div></article>
+  <article class="time-item"><time>2026 · 48H</time><div><h3>《芽 · Grow and Wither》</h3><p data-edit-id="timeline-b">限时团队开发，负责角色多形态系统、关卡事件和可玩版交付。</p><small>Global Game Jam · Godot 4</small></div></article>
+  <article class="time-item"><time>2023</time><div><h3>游戏赛事开发</h3><p data-edit-id="timeline-c">《白与绿地》《钢铁洪流贪吃蛇》：天气与 UI、战斗逻辑、团队协作和限时原型。</p><small>Unity · 程序 / 策划</small></div></article>
+  <article class="time-item"><time>2021 — 2025</time><div><h3>湖北大学 · 软件工程本科</h3><p data-edit-id="timeline-d">以软件工程教育为基础，把结构化程序设计、算法与架构逐步应用到游戏开发。</p><small>Software Engineering</small></div></article>
+ </div>
+ <div class="evidence"><div><h3>可验证的公开材料</h3><p>作品代码、技术文档、赛事页面和在线原型。未公开项目以个人履历与描述为准，不冒充已公开上线项目。</p></div><div class="evidence-links"><a href="https://github.com/coicy/Yiguang-GGJ" target="_blank" rel="noopener noreferrer">Godot 作品仓库 ↗</a><a href="https://globalgamejam.org/games/2026/ya-grow-and-wither-2" target="_blank" rel="noopener noreferrer">Game Jam 作品 ↗</a><a href="https://coicy.github.io/TaptapProtoType/settlement.html" target="_blank" rel="noopener noreferrer">在线原型 ↗</a><a href="https://github.com/coicy/codex-game-development-workflow" target="_blank" rel="noopener noreferrer">开源工作流 ↗</a></div></div>
+</section>
+<section id="contact" class="contact-section" aria-labelledby="contact-title"><div class="wrap contact-layout"><div><div class="eyebrow">07 / CONTACT & COLLABORATION</div><h2 id="contact-title" data-edit-id="contact-title">一起让想法，<br>成为能玩的东西。</h2><p data-edit-id="contact-desc">欢迎围绕游戏客户端开发、技术策划、系统设计与创作工具展开交流。更多工程记录与公开项目可以在 GitHub 查看。</p><a class="cta" href="https://github.com/coicy" target="_blank" rel="noopener noreferrer">前往 GitHub ↗</a></div><div class="contact-note"><strong>YAN SHANGYU / 严尚宇</strong>Gameplay · Engineering · Visual Integration<br><br>当前以 GitHub 作为公开联系入口。邮箱、简历下载与其他社交方式可在确认公开信息后补充。</div></div></section>
 </main>
 <footer class="foot"><div class="wrap foot-inner"><span>© 2026 Yan Shangyu · Built for the craft of games.</span><span>基于 <a href="https://github.com/shengjidaguai-china/personal-homepage-skill" target="_blank" rel="noopener noreferrer">Personal Homepage Skill</a> by powerycy 的非商业工作流制作。</span></div></footer>
 <script>
@@ -109,7 +157,7 @@
  buttons.forEach(btn=>btn.addEventListener('click',()=>{
   const f=btn.dataset.filter;
   buttons.forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));
-  cards.forEach(card=>{card.hidden=f!=='all'&&card.dataset.type!==f});
+  cards.forEach(card=>{card.hidden=f!=='all'&&!card.dataset.type.split(' ').includes(f)});
  }));
 })();
 </script>
