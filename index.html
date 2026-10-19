@@ -26,7 +26,7 @@
 @media(max-width:970px){.nav-items{gap:13px}.nav-items a{font-size:12px}.evidence{flex-direction:column;align-items:stretch}.evidence-links{min-width:0}}
 @media(max-width:740px){.about-grid{grid-template-columns:1fr}.about-intent{padding:25px}.nav-items a:nth-child(1),.nav-items a:nth-child(3),.nav-items a:nth-child(5){display:none}.nav-items a:nth-child(2){display:inline}.time-item{grid-template-columns:1fr;gap:7px}.evidence-links{grid-template-columns:1fr 1fr}}@media(max-width:400px){.evidence-links{grid-template-columns:1fr}.steel .media-word{font-size:37px}}
 
-</style>
+.case-list{display:grid;gap:16px}.case-study{border:1px solid var(--line);background:var(--white);border-radius:20px;padding:29px}.case-head{display:flex;justify-content:space-between;gap:25px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:17px}.case-head span{font:800 11px ui-monospace,monospace;color:var(--accent);letter-spacing:.07em}.case-head h3{font-size:clamp(21px,2.7vw,28px);letter-spacing:-.045em;line-height:1.3;margin:0}.case-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:19px}.case-cols b{display:block;font-size:12px;color:#b14a37;margin-bottom:9px}.case-cols p{font-size:14px;color:var(--mute);line-height:1.85;margin:0}.case-pipe{font:750 11px ui-monospace,monospace;letter-spacing:.025em;background:#e4eee7;border:1px solid #bed3c6;border-radius:7px;margin-top:23px;padding:12px 15px;overflow-wrap:anywhere}.case-link{display:inline-block;margin-top:18px;font-size:13px;font-weight:800;text-decoration:underline;text-underline-offset:4px}@media(max-width:740px){.case-head{display:block}.case-head h3{margin-top:10px}.case-cols{grid-template-columns:1fr;gap:17px}.case-study{padding:21px}.case-cols>div{padding-bottom:12px;border-bottom:1px dashed var(--line)}.case-cols>div:last-child{border-bottom:none}}</style>
 </head>
 <body>
 <header class="nav">
@@ -116,7 +116,17 @@
    </article>
   </div>
  </section>
- <section id="capabilities" class="section wrap" aria-labelledby="cap-title">
+ 
+<section id="cases" class="section wrap" aria-labelledby="cases-title">
+ <div class="section-head"><div><div class="eyebrow">03 / CASE STUDIES</div><h2 id="cases-title" data-edit-id="cases-head">技术难题如何被解决。</h2></div><p class="intro" data-edit-id="cases-lead">从问题到方案，再到验证。以下是根据个人项目履历与公开技术文档整理的具体实践。</p></div>
+ <div class="case-list">
+  <article class="case-study"><div class="case-head"><span>01 / GODOT · ARCHITECTURE</span><h3 data-edit-id="case-one-head">《过早》：UI 与业务逻辑解耦</h3></div><div class="case-cols"><div><b>问题</b><p data-edit-id="case-one-issue">经营界面、弹窗遮罩与交互输入混杂；出餐和结算业务依赖 UI，影响测试与维护。</p></div><div><b>方案</b><p data-edit-id="case-one-solution">五段经营状态机；按界面层级设计输入路由；用状态快照投影与信号同步只读 UI，结算下沉至独立服务。</p></div><div><b>验证</b><p data-edit-id="case-one-test">通过分支评审、JSON 配置校验和 43 组场景化测试覆盖经营主流程及异常输入。</p></div></div><div class="case-pipe">INPUT → STATE MACHINE → SERVICE → READ-ONLY VIEW → TEST</div></article>
+  <article class="case-study"><div class="case-head"><span>02 / UNITY · SYSTEM DESIGN</span><h3 data-edit-id="case-two-head">SLG+RTT：调度、寻路与热重载</h3></div><div class="case-cols"><div><b>问题</b><p data-edit-id="case-two-issue">并行 Tick 存在 Unity API 跨线程调用风险；多单位寻路成本不可控；配置变更依赖重编译。</p></div><div><b>方案</b><p data-edit-id="case-two-solution">按依赖分组在主线程执行 Tick；八向加权 A* 与寻路排队；热重载与快照差异比较。</p></div><div><b>边界</b><p data-edit-id="case-two-test">增加超时与追帧上限，处理 Domain Reload 状态恢复，并通过并发队列将异步物流结果回传主线程。</p></div></div><div class="case-pipe">SCHEDULE → DEPENDENCIES → MAIN THREAD → TRACE</div></article>
+  <article class="case-study"><div class="case-head"><span>03 / GODOT · GAMEPLAY</span><h3 data-edit-id="case-three-head">《失控温室》：让形态系统成为关卡语言</h3></div><div class="case-cols"><div><b>设计目标</b><p data-edit-id="case-three-issue">让幼芽、人形与成熟形态具有独立的移动与战斗价值，并逐步教授玩家反制能力。</p></div><div><b>方案</b><p data-edit-id="case-three-solution">成长资源控制形态；以轻重击、弹反、闪避、敌人韧性与分阶段精英战组织战斗；七区段递进教学。</p></div><div><b>证据与限制</b><p data-edit-id="case-three-test">公开仓库含 GDD、战斗设计与验证记录。目标时长与游戏平衡仍需真实玩家试玩校准。</p></div></div><a class="case-link" href="https://github.com/coicy/Yiguang-GGJ/blob/main/docs/combat_design.md" target="_blank" rel="noopener noreferrer">查看公开战斗设计文档 ↗</a></article>
+  <article class="case-study"><div class="case-head"><span>04 / ART · PIPELINE</span><h3 data-edit-id="case-four-head">《过早》：AI 图像如何变为可用资产</h3></div><div class="case-cols"><div><b>输入</b><p data-edit-id="case-four-issue">从玩法需求明确 UI 场景、交互状态、视觉参考及导入引擎所需的资源规格。</p></div><div><b>制作</b><p data-edit-id="case-four-solution">AI 辅助生成概念图与界面图，分割按钮、图标与装饰元素，整理格式和命名并配合美术调整。</p></div><div><b>集成</b><p data-edit-id="case-four-test">使用编辑器插件登记和验证资源，在实际场景中检查缩放、层级、输入响应及视觉一致性。</p></div></div><div class="case-pipe">BRIEF → CONCEPT → CUT / FORMAT → IMPORT → VISUAL QA</div></article>
+ </div>
+</section>
+<section id="capabilities" class="section wrap" aria-labelledby="cap-title">
   <div class="section-head"><div><div class="eyebrow"><span class="section-index">04 / </span>CAPABILITY MAP</div><h2 id="cap-title" data-edit-id="cap-title">跨越分工，不丢失细节。</h2></div><p class="intro" data-edit-id="cap-intro">我希望承担的不只是单一模块开发，也包括把策划意图、美术资源与实际游戏反馈连接起来的工作。</p></div>
   <div class="cap-grid">
     <article class="cap"><div class="cap-icon" aria-hidden="true">01</div><h3>玩法与系统设计</h3><p data-edit-id="cap-design">拆解战斗、成长、经营与卡牌规则，明确触发条件、状态转移、数值边界和玩家反馈，再为实现定义可检验标准。</p><ul><li>战斗机制</li><li>数值模型</li><li>资源结算</li><li>GDD</li></ul></article>
