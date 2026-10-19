@@ -76,12 +76,12 @@
    <article class="project featured" data-type="game competition">
     <div class="project-media sprout"><div class="proj-deco"></div><div class="media-word" aria-hidden="true">芽<br><small>GROW &amp; WITHER</small></div><span class="visual-caption">GAME JAM 原版 · 文字视觉示意，非实机截图</span></div>
     <div class="project-body"><div class="project-num">PROJECT / 01 · GODOT 4 · 48H GAME JAM</div>
-      <h3 data-edit-id="greenhouse-title">《芽——Grow and Wither》</h3>
-      <p class="project-desc" data-edit-id="greenhouse-desc">一款以植物成长、枯萎与形态切换为核心的平台解谜游戏。玩家借助不同形态穿越狭窄通路、攀援藤蔓，并在毒雾、机关与环境限制中规划前进路线。这是原始 Game Jam 作品的玩法定位，不包含后续仓库版本新增的横版战斗系统。</p>
-      <div class="project-detail"><b>个人职责：</b><span data-edit-id="greenhouse-role">48 小时团队制作中的主程序与策划；实现单角色节点和形态资源驱动的能力切换、形态资源拷贝、关卡局部事件总线，以及 JSON 白盒关卡生成与验证。</span></div>
+      <h3 data-edit-id="grow-wither-title">《芽》 · Grow and Wither</h3>
+      <p class="project-desc" data-edit-id="grow-wither-desc">《芽》是一款围绕植物生长、枯萎与形态切换展开的平台解谜游戏。玩家通过改变形态，穿越狭窄通路、攀援藤蔓，并利用毒雾和机关规划路线。本案例突出 48 小时 Game Jam 的核心机制及本人在形态系统与关卡工具上的工作。</p>
+      <div class="project-detail"><b>个人职责：</b><span data-edit-id="grow-wither-role">48 小时团队制作中的主程序与策划；实现单角色节点和形态资源驱动的能力切换、形态资源拷贝、关卡局部事件总线，以及 JSON 白盒关卡生成与验证。</span></div>
       <div class="tags"><span>Godot 4</span><span>Form Switching</span><span>Platform Puzzle</span><span>48H Jam</span></div>
-      <a class="arrow-link" href="https://globalgamejam.org/games/2026/ya-grow-and-wither-2" target="_blank" rel="noopener noreferrer">查看原始 Game Jam 作品页 ↗</a>
-      <p class="minor-link">说明：同源 GitHub 工程后来加入了战斗内容，但这并非本页所展示的原始作品机制。</p>
+      <a class="arrow-link" href="https://globalgamejam.org/games/2026/ya-grow-and-wither-2" target="_blank" rel="noopener noreferrer">查看 Game Jam 作品记录 ↗</a>
+      <p class="minor-link"><a href="https://github.com/coicy/Yiguang-GGJ" target="_blank" rel="noopener noreferrer">查看同一项目的 GitHub 源码仓库 ↗</a>（仓库文档仍保留曾用名称“失控温室”；游戏正式名称为《芽》。）</p>
     </div>
    </article>
    <article class="project" data-type="game">
@@ -112,9 +112,9 @@
    <article class="project" data-type="tool">
     <div class="project-media workflow"><div class="proj-deco"></div><div class="media-word" aria-hidden="true">SLG<br>DATA</div><span class="visual-caption">UTILITY · 文字视觉示意，非界面截图</span></div>
     <div class="project-body"><div class="project-num">PROJECT / 07 · UNITY TOOLING</div>
-      <h3 data-edit-id="sprout-title">Unity SLG 数据管理器</h3>
-      <p class="project-desc" data-edit-id="sprout-desc">面向个人模拟经营游戏开发的自用数据管理工具。它体现了将常用配置管理功能从单个玩法中提取为可复用工具的尝试。</p>
-      <div class="project-detail"><b>现有公开依据：</b><span data-edit-id="sprout-challenge">仓库提供简短项目说明；具体功能清单和适用边界以源代码为准，暂不宣称未经验证的编辑器功能或性能成果。</span></div>
+      <h3 data-edit-id="slg-data-title">Unity SLG 数据管理器</h3>
+      <p class="project-desc" data-edit-id="slg-data-desc">面向个人模拟经营游戏开发的自用数据管理工具。它体现了将常用配置管理功能从单个玩法中提取为可复用工具的尝试。</p>
+      <div class="project-detail"><b>现有公开依据：</b><span data-edit-id="slg-data-challenge">仓库提供简短项目说明；具体功能清单和适用边界以源代码为准，暂不宣称未经验证的编辑器功能或性能成果。</span></div>
       <div class="tags"><span>Unity</span><span>SLG</span><span>Data Management</span></div>
       <a class="arrow-link" href="https://github.com/coicy/Unity-SLGDataManager" target="_blank" rel="noopener noreferrer">查看工具仓库 ↗</a>
     </div>
@@ -135,14 +135,14 @@
  <div class="case-list">
   <article class="case-study"><div class="case-head"><span>01 / GODOT · ARCHITECTURE</span><h3 data-edit-id="case-one-head">《过早》：UI 与业务逻辑解耦</h3></div><div class="case-cols"><div><b>问题</b><p data-edit-id="case-one-issue">经营界面、弹窗遮罩与交互输入混杂；出餐和结算业务依赖 UI，影响测试与维护。</p></div><div><b>方案</b><p data-edit-id="case-one-solution">五段经营状态机；按界面层级设计输入路由；用状态快照投影与信号同步只读 UI，结算下沉至独立服务。</p></div><div><b>验证</b><p data-edit-id="case-one-test">通过分支评审、JSON 配置校验和 43 组场景化测试覆盖经营主流程及异常输入。</p></div></div><div class="case-pipe">INPUT → STATE MACHINE → SERVICE → READ-ONLY VIEW → TEST</div></article>
   <article class="case-study"><div class="case-head"><span>02 / UNITY · SYSTEM DESIGN</span><h3 data-edit-id="case-two-head">SLG+RTT：调度、寻路与热重载</h3></div><div class="case-cols"><div><b>问题</b><p data-edit-id="case-two-issue">并行 Tick 存在 Unity API 跨线程调用风险；多单位寻路成本不可控；配置变更依赖重编译。</p></div><div><b>方案</b><p data-edit-id="case-two-solution">按依赖分组在主线程执行 Tick；八向加权 A* 与寻路排队；热重载与快照差异比较。</p></div><div><b>边界</b><p data-edit-id="case-two-test">增加超时与追帧上限，处理 Domain Reload 状态恢复，并通过并发队列将异步物流结果回传主线程。</p></div></div><div class="case-pipe">SCHEDULE → DEPENDENCIES → MAIN THREAD → TRACE</div></article>
-  <article class="case-study"><div class="case-head"><span>03 / GODOT · GAMEPLAY</span><h3 data-edit-id="case-three-head">《芽》：用形态切换组织平台解谜</h3></div>
+  <article class="case-study"><div class="case-head"><span>03 / GODOT · GAMEPLAY</span><h3 data-edit-id="case-three-head">《芽》：围绕生长与枯萎构建平台解谜</h3></div>
     <div class="case-cols">
       <div><b>设计目标</b><p data-edit-id="case-three-issue">让植物的成长与枯萎成为主动的路线选择：小形态通过狭缝，其他形态完成不同的移动与藤蔓交互，毒雾和机关引导玩家规划路径。</p></div>
       <div><b>程序实现</b><p data-edit-id="case-three-solution">使用单一角色节点配合形态资源驱动移动参数、能力与视觉；在切换时深拷贝运行时资源，避免共享配置被意外写入。</p></div>
       <div><b>限时开发方法</b><p data-edit-id="case-three-test">把关卡事件约束在局部总线内，避免跨关卡串扰；利用 JSON 白盒地形与实体生成降低搭建和测试成本。</p></div>
     </div>
     <div class="case-pipe">GROW / WITHER → FORM ABILITIES → ROUTE PUZZLES → SCENE TEST</div>
-    <a class="case-link" href="https://globalgamejam.org/games/2026/ya-grow-and-wither-2" target="_blank" rel="noopener noreferrer">原始作品记录 ↗</a>
+    <a class="case-link" href="https://globalgamejam.org/games/2026/ya-grow-and-wither-2" target="_blank" rel="noopener noreferrer">查看 Game Jam 作品记录 ↗</a>
   </article>
   <article class="case-study"><div class="case-head"><span>04 / ART · PIPELINE</span><h3 data-edit-id="case-four-head">《过早》：AI 图像如何变为可用资产</h3></div><div class="case-cols"><div><b>输入</b><p data-edit-id="case-four-issue">从玩法需求明确 UI 场景、交互状态、视觉参考及导入引擎所需的资源规格。</p></div><div><b>制作</b><p data-edit-id="case-four-solution">AI 辅助生成概念图与界面图，分割按钮、图标与装饰元素，整理格式和命名并配合美术调整。</p></div><div><b>集成</b><p data-edit-id="case-four-test">使用编辑器插件登记和验证资源，在实际场景中检查缩放、层级、输入响应及视觉一致性。</p></div></div><div class="case-pipe">BRIEF → CONCEPT → CUT / FORMAT → IMPORT → VISUAL QA</div></article>
  </div>
@@ -172,7 +172,7 @@
  <div class="section-head"><div><div class="eyebrow">06 / EXPERIENCE</div><h2 data-edit-id="journey-heading">从限时原型，到系统开发。</h2></div><p class="intro" data-edit-id="journey-subhead">持续实践独立研发和多人协作，用真实的项目节点说明成长方向。</p></div>
  <div class="timeline">
   <article class="time-item"><time>2026 — NOW</time><div><h3>独立研发与跨引擎制作</h3><p data-edit-id="timeline-a">Unity 自动生产 SLG+RTT 在研；Godot《过早·江城早餐店》；游戏开发 Agent 工具链与验证。</p><small>主程序 / 玩法设计 / 工具研发</small></div></article>
-  <article class="time-item"><time>2026 · 48H</time><div><h3>《芽 · Grow and Wither》</h3><p data-edit-id="timeline-b">限时团队开发，围绕植物成长与枯萎、多形态能力及平台解谜完成角色系统、关卡事件和可玩版交付；后续仓库的战斗扩展不属于原始 48 小时版。</p><small>Global Game Jam · Godot 4</small></div></article>
+  <article class="time-item"><time>2026 · 48H</time><div><h3>《芽 · Grow and Wither》</h3><p data-edit-id="timeline-b">《芽》在 48 小时 Game Jam 中完成可玩原型，以植物成长、枯萎及形态能力为核心；后续研发仍属于同一个项目，GitHub 仓库曾使用其他名称。</p><small>Global Game Jam · Godot 4</small></div></article>
   <article class="time-item"><time>2023</time><div><h3>游戏赛事开发</h3><p data-edit-id="timeline-c">《白与绿地》《钢铁洪流贪吃蛇》：天气与 UI、战斗逻辑、团队协作和限时原型。</p><small>Unity · 程序 / 策划</small></div></article>
   <article class="time-item"><time>2021 — 2025</time><div><h3>湖北大学 · 软件工程本科</h3><p data-edit-id="timeline-d">以软件工程教育为基础，把结构化程序设计、算法与架构逐步应用到游戏开发。</p><small>Software Engineering</small></div></article>
  </div>
