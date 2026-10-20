@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f2eb">
+<meta name="description" content="Coicy 游戏开发作品集的可核验证据：GitHub Actions 成功记录、实际测试源码、验证报告及其边界。">
+<meta property="og:title" content="Coicy / 开发证据档案">
+<meta property="og:description" content="从项目陈述，走向可检查的工程证据。">
+<title>证据档案 · Coicy Game Engineering</title>
+<style>
+:root{--bg:#f5f2eb;--ink:#1d3030;--muted:#546560;--green:#d8e9da;--line:#cbd5cc;--paper:#fffdf7;--accent:#da6549;--dark:#1e3531;--font:Inter,"Noto Sans SC","PingFang SC","Microsoft Yahei",system-ui,sans-serif;--mono:ui-monospace,SFMono-Regular,Consolas,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;min-width:320px;background:var(--bg);color:var(--ink);font:15px/1.8 var(--font);-webkit-font-smoothing:antialiased}a{color:inherit}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.wrap{width:min(1140px,calc(100% - 48px));margin:0 auto}.nav{border-bottom:1px solid var(--line);background:rgba(245,242,235,.95);backdrop-filter:blur(12px);position:sticky;top:0;z-index:5}.navinner{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-size:23px;font-weight:900;letter-spacing:-.07em;text-decoration:none}.brand span{color:var(--accent)}.navlinks{display:flex;align-items:center;gap:20px;font-size:13px;font-weight:750}.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--accent)}.navlinks .pill{background:var(--ink);color:var(--paper);padding:9px 14px;border-radius:100px}.hero{padding:78px 0 58px;border-bottom:1px solid var(--line)}.upper{font:800 12px/1.4 var(--mono);letter-spacing:.14em;color:#477366}.hero h1{font-size:clamp(48px,7.2vw,86px);line-height:1.1;letter-spacing:-.078em;max-width:850px;margin:22px 0}.hero h1 em{font-style:normal;color:var(--accent)}.lead{max-width:850px;color:var(--muted);font-size:18px;line-height:1.9}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:36px}.stat{border:1px solid #b9cbbd;background:#e8f0e6;border-radius:15px;padding:23px}.stat strong{font:850 clamp(32px,4.5vw,52px)/1 var(--mono);color:#284f43;display:block}.stat span{font-size:13px;color:var(--muted);display:block;margin-top:10px}.legend{padding:19px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}.legend b{color:var(--ink)}.main{padding:64px 0 85px}.head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:30px}.head h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.06em;line-height:1.2;margin:7px 0}.head p{max-width:490px;color:var(--muted);margin:0}.cards{display:grid;gap:20px}.proof{border-radius:21px;border:1px solid var(--line);background:var(--paper);overflow:hidden}.proofhead{padding:26px 30px 22px;background:#e5eee4;display:flex;align-items:start;justify-content:space-between;gap:17px;border-bottom:1px solid var(--line)}.proof:nth-child(2) .proofhead{background:#e4e9ef}.proof:nth-child(3) .proofhead{background:#f0e9dd}.proofhead h3{font-size:clamp(23px,3vw,33px);letter-spacing:-.05em;line-height:1.3;margin:9px 0}.label{font:800 12px var(--mono);color:#58756a;letter-spacing:.05em}.grade{font:800 11px var(--mono);background:#fff;border:1px solid #bed0c2;padding:9px 12px;border-radius:100px;white-space:nowrap}.proofmain{padding:29px 30px 31px}.claim{font-size:16px;font-weight:700;line-height:1.8;margin:0 0 20px}.detailgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.detail{padding:17px;border-radius:11px;background:#f0f2ea;border:1px solid #e1e5dc;min-width:0}.detail b{font-size:12px;color:#b3533b}.detail p{font-size:13px;color:var(--muted);margin:8px 0 0;overflow-wrap:anywhere}.sha{font:700 12px var(--mono)}.routes{display:flex;gap:9px;flex-wrap:wrap;margin-top:23px}.routes a{display:inline-block;font-size:12px;font-weight:800;text-decoration:none;background:var(--dark);color:#fff;border-radius:100px;padding:11px 15px}.routes a:hover{background:#37675b}.routes a.secondary{background:transparent;color:var(--ink);border:1px solid #99b1a4}.edge{border-top:1px dashed #cad5cb;margin-top:23px;padding-top:16px;color:var(--muted);font-size:13px}.edge strong{color:var(--ink)}.records{margin-top:78px}.records table{border-collapse:collapse;width:100%;background:var(--paper);font-size:13px}.records th,.records td{border-bottom:1px solid var(--line);text-align:left;padding:17px 15px;vertical-align:top}.records th{background:#dfeae0;color:#325147}.records td:first-child{font-weight:800;width:23%}.records td:nth-child(2){width:28%}.records td:last-child{color:var(--muted)}.records a{font-weight:750;text-underline-offset:3px}.warning{margin-top:28px;padding:21px;background:#f3e7db;border:1px solid #e5cec3;border-radius:12px;color:#65463e;font-size:13px}.warning h3{margin:0 0 8px;font-size:17px}.warning p{margin:0}.footercta{background:var(--ink);padding:58px 0;color:#fff}.footercta h2{font-size:clamp(29px,5vw,53px);letter-spacing:-.055em;line-height:1.2;margin:0 0 17px}.footercta p{color:#c3d2cb;max-width:740px}.footercta a{display:inline-block;background:#dcefac;color:#24362d;padding:12px 19px;border-radius:100px;text-decoration:none;font-weight:800;margin-top:12px}.foot{background:#182622;color:#a6b8b0;padding:22px 0;font-size:12px}
+@media(max-width:800px){.detailgrid{grid-template-columns:1fr}.head{display:block}.head p{margin-top:14px}.proofhead{display:block}.grade{display:inline-block;margin-top:9px}.stats{grid-template-columns:1fr 1fr}.records{overflow-x:auto}.records table{min-width:680px}}
+@media(max-width:490px){.wrap{width:calc(100% - 32px)}.navinner{min-height:62px}.navlinks{gap:10px}.navlinks a:nth-child(1){display:none}.hero{padding:52px 0}.hero h1{font-size:50px}.lead{font-size:16px}.stats{grid-template-columns:1fr}.proofhead,.proofmain{padding:20px}.main{padding:48px 0}.routes a{width:100%;text-align:center}}
+@media print{.nav{position:static}.proof{break-inside:avoid}.footercta{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navinner"><a class="brand" href="./index.html">COICY<span>.</span></a><nav class="navlinks" aria-label="导航"><a href="#proofs">工程证据</a><a href="#gaps">证据缺口</a><a class="pill" href="./index.html">返回主页 ↗</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap"><div class="upper">ENGINEERING EVIDENCE / CHECKABLE SOURCES / 2026</div><h1>不是自我评价。<br><em>而是可核验的工程记录。</em></h1><p class="lead">证据首先要回答“这项能力如何证明”。本页把 GitHub Actions 实际执行结果、可审查的源码测试和项目验证文档分开呈现，并明确哪些指标没有获得独立复现。</p><div class="stats">
+<div class="stat"><strong>02</strong><span>当前仓库 HEAD 对应的成功 CI / 部署工作流</span></div>
+<div class="stat"><strong>63</strong><span>《芽》仓库内可审查的 scene / unit 测试脚本文件；不代表全部通过</span></div>
+<div class="stat"><strong>03</strong><span>《芽》文档记录的验证套件：129、65 与 36 项断言，尚未重新执行</span></div>
+</div></div></section>
+<div class="legend"><div class="wrap"><b>证据口径：</b> A = 当前提交对应的第三方 CI 成功记录；B = 存在源码与测试报告，但未独立重跑；C = 仅有项目陈述，仍待公开材料。证据越具体，越应公开其限制。</div></div>
+<div class="main wrap" id="proofs">
+<div class="head"><div><div class="upper">01 / VERIFIED TRAILS</div><h2>可以点击检查的工程证据。</h2></div><p>链接优先指向已核对的运行编号、源码文件和报告，不使用无法追溯的数字装饰。</p></div>
+<div class="cards">
+<article class="proof"><div class="proofhead"><div><div class="label">EVIDENCE 01 / OPEN SOURCE ENGINEERING</div><h3>游戏开发 Agent 工作流</h3></div><div class="grade">A · CI SUCCESS / CURRENT HEAD</div></div><div class="proofmain">
+<p class="claim">验证脚本、Python 单元测试与发布包构建已在 GitHub Actions 上成功执行；工作流运行时的 commit 与当前 main 一致。</p>
+<div class="detailgrid">
+<div class="detail"><b>运行证据</b><p>2026-09-23 的 <code>Validate workflow distribution</code> 运行已完成且结论为 <b>success</b>。校验、单元测试和发布包构建三个主要步骤均成功。</p></div>
+<div class="detail"><b>运行版本</b><p class="sha">cd67fdce51b5</p><p>与核验时 <code>main</code> 的 HEAD SHA 匹配，避免用旧流水线为后续变更背书。</p></div>
+<div class="detail"><b>代码定位</b><p><code>.github/workflows/validate.yml</code> 明确执行 <code>scripts/validate.py</code>、<code>unittest</code> 发现和发布包构建；测试文件检查规范冻结、AC 和独立审查门槛。</p></div>
+</div><div class="routes">
+<a href="https://github.com/coicy/codex-game-development-workflow/actions/runs/35807374064" target="_blank" rel="noopener noreferrer">打开成功 CI 记录 ↗</a>
+<a class="secondary" href="https://github.com/coicy/codex-game-development-workflow/blob/cd67fdce51b542357b0e0ecc3aae9afd0734b3de/.github/workflows/validate.yml" target="_blank" rel="noopener noreferrer">检查流水线定义 ↗</a>
+<a class="secondary" href="https://github.com/coicy/codex-game-development-workflow/blob/cd67fdce51b542357b0e0ecc3aae9afd0734b3de/tests/test_workflow_state.py" target="_blank" rel="noopener noreferrer">查看工作流单元测试 ↗</a>
+</div><p class="edge"><strong>不能证明：</strong>这套工作流已在所有游戏引擎或商业项目中验证有效；CI 证明的是该仓库指定任务在对应提交上成功。</p></div></article>
+<article class="proof"><div class="proofhead"><div><div class="label">EVIDENCE 02 / THREE.JS PROTOTYPE</div><h3>涌现式聚落 · 模拟与原型交付</h3></div><div class="grade">A · ACCEPTANCE / BUILD / DEPLOY</div></div><div class="proofmain">
+<p class="claim">当前提交对应的 Actions 记录显示：运行原型验收、构建静态网站、上传 Pages 产物及部署四个步骤均成功。</p>
+<div class="detailgrid">
+<div class="detail"><b>运行证据</b><p>2026-10-02 的 <code>Deploy Vite prototype to GitHub Pages</code> 构建及部署 Job 均显示成功。</p></div>
+<div class="detail"><b>运行版本</b><p class="sha">92a99b055f30</p><p>与核验时的 <code>main</code> HEAD 匹配。仓库采用 Three.js、TypeScript 与 Vite。</p></div>
+<div class="detail"><b>验收代码</b><p><code>prototype-acceptance.mjs</code> 以固定 seed 检查 12 回合阶段推进、神谕牌获取与消耗、世界变化等规则。旧 Tile-Centric 验收报告是历史阶段材料，不冒充当前脚本结果。</p></div>
+</div><div class="routes">
+<a href="https://github.com/coicy/TaptapProtoType/actions/runs/36975008895" target="_blank" rel="noopener noreferrer">打开成功部署记录 ↗</a>
+<a class="secondary" href="https://github.com/coicy/TaptapProtoType/blob/92a99b055f30bb9d087d79d0c13b58ba1b91f259/scripts/prototype-acceptance.mjs" target="_blank" rel="noopener noreferrer">查看当前验收脚本 ↗</a>
+<a class="secondary" href="https://coicy.github.io/TaptapProtoType/settlement.html" target="_blank" rel="noopener noreferrer">尝试在线原型 ↗</a>
+</div><p class="edge"><strong>不能证明：</strong>所有地区和设备都能访问网站，或已通过真实移动端与长时性能测试。部署成功是可核验的，当前访问环境无法独立加载站点。</p></div></article>
+<article class="proof"><div class="proofhead"><div><div class="label">EVIDENCE 03 / GODOT 4 SOURCE & TESTS</div><h3>《芽》 · 形态系统与后续工程验证</h3></div><div class="grade">B · CODE + DOCUMENTED REPORT</div></div><div class="proofmain">
+<p class="claim">仓库存在 63 个场景/单元测试脚本，并提供可执行的测试入口与验证文档；其中部分测试覆盖同一游戏后续加入的战斗和正式关卡，不属于原始 48 小时原型的全部功能。</p>
+<div class="detailgrid">
+<div class="detail"><b>战斗脚本报告</b><p><code>combat_validation.md</code> 记录 <b>129 项战斗断言</b>，并说明两种战斗形态和精英战规则的自动检查口径。</p></div>
+<div class="detail"><b>主关卡集成记录</b><p><code>greenhouse_validation.md</code> 记录 <b>65 项集成断言、0 失败</b>；另有 36 项正式遭遇回归断言记录，均属项目文档自述。</p></div>
+<div class="detail"><b>独立源码检查</b><p>在 <code>test_greenhouse_level.gd</code>、<code>test_combat_system.gd</code> 和 <code>test_greenhouse_encounters.gd</code> 中能看到断言、失败收集和退出码逻辑；可检查测试究竟针对什么。</p></div>
+</div><div class="routes">
+<a href="https://github.com/coicy/Yiguang-GGJ/blob/3f1f1073a7c2c6eb60465933072b02630749ff50/docs/combat_validation.md" target="_blank" rel="noopener noreferrer">查看战斗验证报告 ↗</a>
+<a class="secondary" href="https://github.com/coicy/Yiguang-GGJ/blob/3f1f1073a7c2c6eb60465933072b02630749ff50/docs/greenhouse_validation.md" target="_blank" rel="noopener noreferrer">查看关卡验证报告 ↗</a>
+<a class="secondary" href="https://github.com/coicy/Yiguang-GGJ/blob/3f1f1073a7c2c6eb60465933072b02630749ff50/tests/scene/test_greenhouse_level.gd" target="_blank" rel="noopener noreferrer">检查集成测试源码 ↗</a>
+<a class="secondary" href="https://globalgamejam.org/games/2026/ya-grow-and-wither-2" target="_blank" rel="noopener noreferrer">原始《芽》参赛记录 ↗</a>
+</div><p class="edge"><strong>不能证明：</strong>我已重新执行 129 / 65 / 36 项测试，或原始参赛版就包含正式版本的战斗系统。报告引用的截图和录像位于未提交的 <code>build/</code>，目前无法从公开仓库取到原件。也没有发现该仓库的公开 Actions 运行记录。</p></div></article>
+</div>
+<section class="records" id="gaps"><div class="head"><div><div class="upper">02 / UNVERIFIED CLAIMS</div><h2>哪些内容还缺少证据？</h2></div><p>证据不足不代表项目不存在，而是现阶段不应该包装成第三方可核验的结论。</p></div>
+<table><thead><tr><th>能力或项目</th><th>当前可查材料</th><th>下一步最有价值的补证</th></tr></thead><tbody>
+<tr><td>《过早·江城早餐店》</td><td>个人项目履历中的状态机、配置、43 组场景测试记录；无公开仓库</td><td>去身份化的测试报告、关键架构图、真实 UI 前后对比或可公开演示</td></tr>
+<tr><td>Unity 自动生产 SLG + RTT</td><td>个人履历记录 Tick 调度、寻路、热重载；未发现对应公开工程</td><td>可脱敏的 Tick 调度源码、测试数据、Profiler 采样和录屏</td></tr>
+<tr><td>AI 视觉资产整合</td><td>明确的生成、拆分、导入与验收职责描述；没有原素材证据链</td><td>同一界面的概念图、元素切分图、引擎最终截图，并标记来源及许可</td></tr>
+<tr><td>游戏体验与品质</td><td>自动测试与部分项目文档；尚无完整公开玩家观测数据</td><td>真实试玩、输入和 UI 操作录屏、FPS 和设备配置、可复现缺陷记录</td></tr>
+</tbody></table>
+<div class="warning"><h3>证据使用原则</h3><p>CI 记录只针对对应 commit 生效；项目自写的测试报告应明确标为“项目文档记录”，不能直接称为独立复测。历史版本的验收内容不能不加区分地替代当前版本。作品集可以专业、有张力，但不会为了显得资深而虚构数字。</p></div>
+</section></div>
+<section class="footercta"><div class="wrap"><h2>让技术能力，拥有可以打开的出处。</h2><p>真实的源码、可回放的测试、可核验的部署记录，是比形容词更有分量的技术表达。</p><a href="./deep-dives.html">阅读完整工程案例 ↗</a></div></section>
+</main><footer class="foot"><div class="wrap">© 2026 COICY · Engineering evidence ledger · 不公开个人法定姓名及联系方式</div></footer>
+</body></html>
